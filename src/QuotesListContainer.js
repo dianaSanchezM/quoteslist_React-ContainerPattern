@@ -14,6 +14,7 @@ export default class QuotesListContainer extends React.Component {
   
     render() {
       const { quotes } = this.state;
+      console.log("container", quotes, this.props.authorName, this.props.api);
       return <Quotes quotes={quotes} authorName = {this.props.authorName} />;
     }
   }
